@@ -36,45 +36,54 @@ steps:
 [
    {
       "AmiLaunchIndex":0,
-      "ImageId":"ami-0323c3dd2da7fb37d",
-      "InstanceId":"i-0d7ce1cc8568040ba",
+      "ImageId":"ami-06851e719b3441357",
+      "InstanceId":"i-04ba78df6e2010d25",
       "InstanceType":"t2.micro",
       "KernelId":"None",
-      "KeyName":"my-keypair1",
-      "LaunchTime":datetime.datetime(2020,5,18,23,50,14,"tzinfo=tzlocal())",
+      "KeyName":"kenaz-keypair1",
+      "LaunchTime":datetime.datetime(2020,6,1,21,24,45,"tzinfo=tzlocal())",
       "Monitoring":{
          "State":"disabled"
       },
       "Placement":{
-         "AvailabilityZone":"us-east-1c",
+         "AvailabilityZone":"us-east-1e",
          "GroupName":"",
          "Tenancy":"default"
       },
       "Platform":"None",
-      "PrivateDnsName":"ip-172-31-50-221.ec2.internal",
-      "PrivateIpAddress":"172.31.50.221",
+      "PrivateDnsName":"ip-172-31-47-64.ec2.internal",
+      "PrivateIpAddress":"172.31.47.64",
       "ProductCodes":[
 
       ],
-      "PublicDnsName":"ec2-3-89-89-90.compute-1.amazonaws.com",
-      "PublicIpAddress":"3.89.89.90",
+      "PublicDnsName":"ec2-54-158-189-43.compute-1.amazonaws.com",
+      "PublicIpAddress":"54.158.189.43",
       "RamdiskId":"None",
       "State":{
          "Code":16,
          "Name":"running"
       },
       "StateTransitionReason":"",
-      "SubnetId":"subnet-b0be609d",
+      "SubnetId":"subnet-e322e2df",
       "VpcId":"vpc-98b2a6ff",
       "Architecture":"x86_64",
       "BlockDeviceMappings":[
          {
             "DeviceName":"/dev/xvda",
             "Ebs":{
-               "AttachTime":datetime.datetime(2020,5,11,19,53,25,"tzinfo=tzlocal())",
+               "AttachTime":datetime.datetime(2020,6,1,21,24,46,"tzinfo=tzlocal())",
                "DeleteOnTermination":True,
                "Status":"attached",
-               "VolumeId":"vol-01520ea868d53d293"
+               "VolumeId":"vol-0d7e37a31ab1e1b8a"
+            }
+         },
+         {
+            "DeviceName":"/dev/xvdb",
+            "Ebs":{
+               "AttachTime":datetime.datetime(2020,6,1,21,24,46,"tzinfo=tzlocal())",
+               "DeleteOnTermination":True,
+               "Status":"attached",
+               "VolumeId":"vol-0e6ac859412397494"
             }
          }
       ],
@@ -90,12 +99,12 @@ steps:
          {
             "Association":{
                "IpOwnerId":"amazon",
-               "PublicDnsName":"ec2-3-89-89-90.compute-1.amazonaws.com",
-               "PublicIp":"3.89.89.90"
+               "PublicDnsName":"ec2-54-158-189-43.compute-1.amazonaws.com",
+               "PublicIp":"54.158.189.43"
             },
             "Attachment":{
-               "AttachTime":datetime.datetime(2020,5,11,19,53,24,"tzinfo=tzlocal())",
-               "AttachmentId":"eni-attach-0810dc89921bfb32a",
+               "AttachTime":datetime.datetime(2020,6,1,21,24,45,"tzinfo=tzlocal())",
+               "AttachmentId":"eni-attach-0e5bec61bcee116bc",
                "DeleteOnTermination":True,
                "DeviceIndex":0,
                "Status":"attached"
@@ -103,34 +112,34 @@ steps:
             "Description":"",
             "Groups":[
                {
-                  "GroupName":"launch-wizard-32",
-                  "GroupId":"sg-055e3c6c1245b30ac9"
+                  "GroupName":"launch-wizard-37",
+                  "GroupId":"sg-0b24f1341f73e1c31"
                }
             ],
             "Ipv6Addresses":[
 
             ],
-            "MacAddress":"12:7c:f1:49:20:a5",
-            "NetworkInterfaceId":"eni-033397b08b96d1f3a",
+            "MacAddress":"06:68:26:f0:12:dd",
+            "NetworkInterfaceId":"eni-0fc43d669a505069f",
             "OwnerId":"180094860577",
-            "PrivateDnsName":"ip-172-31-50-221.ec2.internal",
-            "PrivateIpAddress":"172.31.50.221",
+            "PrivateDnsName":"ip-172-31-47-64.ec2.internal",
+            "PrivateIpAddress":"172.31.47.64",
             "PrivateIpAddresses":[
                {
                   "Association":{
                      "IpOwnerId":"amazon",
-                     "PublicDnsName":"ec2-3-89-89-90.compute-1.amazonaws.com",
-                     "PublicIp":"3.89.89.90"
+                     "PublicDnsName":"ec2-54-158-189-43.compute-1.amazonaws.com",
+                     "PublicIp":"54.158.189.43"
                   },
                   "Primary":True,
-                  "PrivateDnsName":"ip-172-31-50-221.ec2.internal",
-                  "PrivateIpAddress":"172.31.50.221"
+                  "PrivateDnsName":"ip-172-31-47-64.ec2.internal",
+                  "PrivateIpAddress":"172.31.47.64"
                }
             ],
             "SourceDestCheck":True,
             "Status":"in-use",
-            "SubnetId":"subnet-b0b2309d",
-            "VpcId":"vpc-9834a6ff",
+            "SubnetId":"subnet-e322e2df",
+            "VpcId":"vpc-98b2a6ff",
             "InterfaceType":"interface"
          }
       ],
@@ -139,8 +148,8 @@ steps:
       "RootDeviceType":"ebs",
       "SecurityGroups":[
          {
-            "GroupName":"launch-wizard-32",
-            "GroupId":"sg-055e3c6c1245b30ac9"
+            "GroupName":"launch-wizard-37",
+            "GroupId":"sg-0b24f1341f73e1c31"
          }
       ],
       "SourceDestCheck":True,
@@ -168,6 +177,5 @@ steps:
          "HttpEndpoint":"enabled"
       }
    }
-   ...
 ]
 ```

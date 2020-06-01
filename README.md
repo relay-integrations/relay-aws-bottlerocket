@@ -8,7 +8,7 @@ The following are supported actions:
 
 |   Type    |  Name              |
 |-----------|--------------------|
-| Step      | [bottlerocket-list-instances](/actions/steps/bottlerocket-list-instances)  | 
+| Step      | [bottlerocket-describe-instances](/actions/steps/bottlerocket-describe-instances)  | 
 
 
 ## Contributing

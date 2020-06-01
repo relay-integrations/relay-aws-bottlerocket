@@ -25,11 +25,15 @@ sess = boto3.Session(
 )
 ec2 = sess.resource('ec2')
 raw_instances = ec2.instances.all()
-print('Found the following Bottlerocket instances:\n')
-print("{:<30} {:<30} {:<30} {:<30} {:<30}".format('ID', 'STATE', 'TYPE', 'VPC', 'KEY PAIR'))
-for instance in raw_instances:
-  print("{:<30} {:<30} {:<30} {:<30} {:<30}".format(instance.instance_id, instance.state['Name'], instance.instance_type, instance.vpc_id, instance.key_name))
-instances = list(map(partial(instance_to_dict, ec2), ec2.instances.all()))
 
-print('\nAdding {0} instance(s) to the output `instances`'.format(len(instances)))
+instances = []
+
+print('Found the following Bottlerocket instances:\n')
+print("{:<30} {:<30} {:<30} {:<30} {:<30} {:<30}".format('ID', 'STATE', 'TYPE', 'VPC', 'KEY PAIR', 'IMAGE_NAME'))
+for instance in raw_instances:
+  if ("bottlerocket" in instance.image.name or "bottlerocket" in instance.image.description):
+    print("{:<30} {:<30} {:<30} {:<30} {:<30} {:<30}".format(instance.instance_id, instance.state['Name'], instance.instance_type, instance.vpc_id, instance.key_name, instance.image.name))
+    instances.append(instance_to_dict(ec2, instance))
+
+print('\nAdding {0} Bottlerocket instance(s) to the output `instances`'.format(len(instances)))
 relay.outputs.set('instances', instances)
