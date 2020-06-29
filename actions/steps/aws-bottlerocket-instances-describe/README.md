@@ -24,7 +24,7 @@ information about them.
 steps:
 # ...
 - name: bottlerocket-describe-instances
-  image: projectnebula/bottlerocket-describe-instances
+  image: relaysh/aws-bottlerocket-instances-describe
   spec:
     aws:
       connection: !Connection { type: aws, name: my-aws-account } 
