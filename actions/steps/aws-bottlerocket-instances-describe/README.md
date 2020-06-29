@@ -1,4 +1,4 @@
-# bottlerocket-describe-instances
+# aws-bottlerocket-instances-describe
 
 This [AWS Bottlerocket](https://aws.amazon.com/bottlerocket/) step container lists the Bottlerocket
 instances in an AWS region and sets an output, `instances`, to an array containing
