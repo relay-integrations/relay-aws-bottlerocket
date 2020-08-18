@@ -21,9 +21,14 @@ summary: Describe bottlerocket instances running on EKS
 description: |
   This step queries the AWS API and enumerates Bottlerocket instances
   for policy filtering and later actions in a workflow.
-  
+
+build:
+  apiVersion: build/v1
+  kind: Docker
 
 # URL or path relative to this file to an icon or icons representing this
 # action. Optional. Defaults to the integration icon.
-icon: 
+icon:
 
+publish:
+  repository: relaysh/aws-bottlerocket-step-describe-instances
