@@ -32,3 +32,11 @@ icon:
 
 publish:
   repository: relaysh/aws-bottlerocket-step-describe-instances
+
+schemas:
+  spec: 
+    source: file
+    file: spec.schema.json
+  output:
+    source: file
+    file: output.schema.json
