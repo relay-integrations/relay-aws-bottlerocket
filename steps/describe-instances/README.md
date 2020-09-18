@@ -4,20 +4,6 @@ This [AWS Bottlerocket](https://aws.amazon.com/bottlerocket/) step container lis
 instances in an AWS region and sets an output, `instances`, to an array containing
 information about them.
 
-## Specification
-
-| Setting | Child setting | Data type | Description | Default | Required |
-|---------|---------------|-----------|-------------|---------|----------|
-| `aws` || mapping | A mapping of AWS account configuration. | None | True |
-|| `connection` | AWS Connection | Relay Connection for the AWS account. Use the Connection sidebar to configure the AWS Connection | None | True |
-|| `region` | string | The AWS region to use (for example, `us-west-2`). | None | True |
-
-## Outputs
-
-| Name | Data type | Description |
-|------|-----------|-------------|
-| `instances` | array of mappings | The Bottlerocket instances in the given region. |
-
 ## Example
 
 ```yaml
