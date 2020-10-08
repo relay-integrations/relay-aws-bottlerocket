@@ -8,7 +8,7 @@ The following are supported actions:
 
 |   Type    |  Name              |
 |-----------|--------------------|
-| Step      | [aws-bottlerocket-instances-describe](/steps/aws-bottlerocket-instances-describe)  | 
+| Step      | [aws-bottlerocket-instances-describe](/steps/describe-instances)  | 
 
 
 ## Contributing
