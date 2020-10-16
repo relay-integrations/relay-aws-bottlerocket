@@ -4,19 +4,6 @@ This [AWS Bottlerocket](https://aws.amazon.com/bottlerocket/) step container lis
 instances in an AWS region and sets an output, `instances`, to an array containing
 information about them.
 
-## Example
-
-```yaml
-steps:
-# ...
-- name: bottlerocket-describe-instances
-  image: relaysh/aws-bottlerocket-instances-describe
-  spec:
-    aws:
-      connection: !Connection { type: aws, name: my-aws-account } 
-      region: us-west-2
-```
-
 ## Example output `instances`
 ```
 [
