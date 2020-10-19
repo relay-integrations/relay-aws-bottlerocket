@@ -14,7 +14,7 @@ name: describe-instances
 version: 1
 
 # High-level phrase describing what this action does. Required.
-summary: Describe bottlerocket instances running on EKS
+summary: Describe Bottlerocket EC2 instances
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
