@@ -47,7 +47,7 @@ examples:
     apiVersion: v1
     kind: Step
     name: bottlerocket-describe-instances
-    image: relaysh/aws-bottlerocket-describe-instances
+    image: relaysh/aws-bottlerocket-step-describe-instances
     spec:
       aws:
         connection: !Connection { type: aws, name: my-aws-account } 
