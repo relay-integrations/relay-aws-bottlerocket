@@ -1,6 +1,6 @@
-# Amazon Web Services Bottlerocket integration
+# AWS Bottlerocket integration
 
-Integration with Amazon Web Services Bottlerocket for Puppet Relay.
+Integration with AWS Bottlerocket for Puppet Relay.
 
 ## Actions
 
