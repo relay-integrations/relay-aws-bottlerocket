@@ -22,11 +22,11 @@ version: v20200408
 
 # The shortest possible accurate description of this integration. Required. May
 # just be the name of the service.
-summary: Amazon Web Services Bottlerocket
+summary: AWS Bottlerocket
 
 # A paragraph or two describing what this integration does. Optional. Markdown.
 description: |
-    Bottlerocket is a Linux-based open-source operating system that is purpose-built by Amazon Web Services for running containers on virtual machines or bare metal hosts.
+   AWS Bottlerocket is a Linux-based open-source operating system that is purpose-built by Amazon Web Services for running containers on virtual machines or bare metal hosts.
 
 # License information. Optional. If not specified, this integration is assumed
 # to be unlicensed proprietary code. Otherwise, must be a valid SPDX License
