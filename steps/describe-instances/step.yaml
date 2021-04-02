@@ -19,8 +19,7 @@ summary: Describe Bottlerocket EC2 instances
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
 description: |
-  This step queries the AWS API and enumerates Bottlerocket instances
-  for policy filtering and later actions in a workflow.
+  Enumerates AWS EC2 Bottlerocket instances for policy filtering and later actions in a workflow.
 
 build:
   apiVersion: build/v1
